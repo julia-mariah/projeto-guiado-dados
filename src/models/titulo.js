@@ -8,7 +8,7 @@
 const mongoose = require("mongoose")
 
 
-const estudioSchema = new mongoose.Schema({
+const tituloSchema = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
 
     nome: {
@@ -39,4 +39,4 @@ const estudioSchema = new mongoose.Schema({
 
     }
 })  
-module.exports = mongoose.model
+module.exports = mongoose.model("titulo", tituloSchema )
